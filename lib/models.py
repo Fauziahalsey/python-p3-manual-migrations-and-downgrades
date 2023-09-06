@@ -21,7 +21,7 @@ class Student(Base):
 
     id = Column(Integer(), primary_key=True)
     name = Column(String(), index=True)
-    email = Column(String(55))
+    new_email = Column(String(55))  # Rename the 'email' column to 'new_email'
     grade = Column(Integer())
     birthday = Column(DateTime())
     enrolled_date = Column(DateTime(), default=datetime.now())
